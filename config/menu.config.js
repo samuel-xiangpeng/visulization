@@ -1,6 +1,6 @@
 export default [
     // {
-    //     title: "gitDataV",
+    //     title: "高校毕业生就业分析",
     //     link: "/sys/githubpro",
     //     key: "gitDataV",
     //     icon: "github"
@@ -44,50 +44,50 @@ export default [
                 link: '/sys/echarts/bar',
                 key: 'Bar',
                 icon: 'bar-chart',
-                title: 'Bar'
+                title: '柱形图'
             },
             {
                 link: '/sys/echarts/line',
                 key: 'line',
                 icon: 'line-chart',
-                title: 'Line'
+                title: '折线图'
             },
             {
                 link: '/sys/echarts/area',
                 key: 'area',
                 icon: 'area-chart',
-                title: 'Area'
+                title: '区域图'
             },
             {
                 link: '/sys/echarts/yBar',
                 key: 'yBar',
                 icon: 'icon-yBar',
-                title: 'YBar'
+                title: 'Y方向柱形图'
             },
             {
                 link: '/sys/echarts/funnel',
                 key: 'funnel',
                 icon: 'icon-funnel',
-                title: 'Funnel'
+                title: '漏斗图'
             },
             {
                 link: '/sys/echarts/pie',
                 icon: 'pie-chart',
                 key: "pie",
-                title: 'Pie'
+                title: '饼状图'
             },
             {
                 link: '/sys/echarts/pieDoughnut',
                 key: 'pieDoughnut',
                 icon: 'icon-pieDoughnut',
-                title: 'PieDoughnut'
+                title: '空心饼状图'
             },
-            {
-                link: '/sys/echarts/sankey',
-                key: 'sankey',
-                icon: 'icon-sankey',
-                title: 'Sankey'
-            },
+            // {
+            //     link: '/sys/echarts/sankey',
+            //     key: 'sankey',
+            //     icon: 'icon-sankey',
+            //     title: 'Sankey'
+            // },
         ]
     },
     // {

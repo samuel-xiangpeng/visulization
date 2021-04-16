@@ -9,7 +9,7 @@ class Chart extends PureComponent {
         const { description, bar_data } = this.props;
         return (
             <PageHeader
-                title={'条形图'}
+                title={'柱形图'}
                 pathtitles={['Echarts', 'Bar']}
                 description={description}
             >

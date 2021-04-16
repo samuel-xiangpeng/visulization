@@ -8,40 +8,38 @@ export default {
         checkes: { email: true, union: true, video: true },
         defaultKey: 'email',
         mapdata: {
-            "columns": [
-                {
+            "columns": [{
                     "field": "name",
                     "name": "省市",
                     "type": "string"
                 },
                 {
                     "field": "email",
-                    "name": "邮件营销",
+                    "name": "互联网行业",
                     "type": "string"
                 },
                 {
                     "field": "union",
-                    "name": "联盟广告",
+                    "name": "房地产行业",
                     "type": "string"
                 },
                 {
                     "field": "video",
-                    "name": "视频广告",
+                    "name": "影视娱乐行业",
                     "type": "string"
                 },
                 {
                     "field": "visit",
-                    "name": "直接访问",
+                    "name": "餐饮行业",
                     "type": "string"
                 },
                 {
                     "field": "search",
-                    "name": "搜索引擎",
+                    "name": "医疗服务",
                     "type": "string"
                 }
             ],
-            "rows": [
-                {
+            "rows": [{
                     "name": "北京",
                     "email": 9,
                     "union": 188,
@@ -139,7 +137,7 @@ export default {
                 },
                 {
                     "name": "新疆",
-                    "email": 89,
+                    "email": 10,
                     "union": 11,
                     "video": 64,
                     "visit": 283,
@@ -318,7 +316,7 @@ export default {
     },
 
     subscriptions: {
-        setupHistory({ dispatch, history }) {// eslint-disable-line
+        setupHistory({ dispatch, history }) { // eslint-disable-line
             history.listen(({ pathname, query, state }) => { // eslint-disable-line
                 if (pathname.indexOf('sys/regionalAnalysis') > -1) {
                     // dispatch({ type: 'getData', payload: { timeType: 'day' } });
@@ -328,8 +326,8 @@ export default {
     },
 
     effects: {
-        *getData({ payload }, { call, put }) {
-            const { data: { mapdata } } = yield call(api.fetch, { ...payload });
+        * getData({ payload }, { call, put }) {
+            const { data: { mapdata } } = yield call(api.fetch, {...payload });
             yield put({
                 type: 'save',
                 payload: {
@@ -341,7 +339,7 @@ export default {
 
     reducers: {
         save(state, action) {
-            return { ...state, ...action.payload };
+            return {...state, ...action.payload };
         },
     },
 

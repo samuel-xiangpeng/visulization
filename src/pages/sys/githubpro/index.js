@@ -12,16 +12,16 @@ class Index extends PureComponent {
         return (
             <Page
                 pathtitles={[{
-                    title: 'gitDataV',
+                    title: '高校毕业生就业数据分析',
                     icon: 'github'
                 }]}
                 style={{ backgroundColor: 'transparent' }}
-                title={'GitDataV'}
+                title={'高校毕业生就业数据分析'}
                 description={formatMessage({ id: 'gitDataV.desc' })}
             >
                 <Header />
                 <Content />
-                <FooterTable />
+                {/* <FooterTable /> */}
             </Page>
         );
     }

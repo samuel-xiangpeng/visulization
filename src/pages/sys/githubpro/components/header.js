@@ -7,14 +7,7 @@ import styles from '../index.less';
 
 const { Meta } = Card;
 class Index extends PureComponent {
-    handleSubmit = ({ account }) => {
-        this.props.dispatch({
-            type: 'githubPro/getAccountInfo',
-            payload: {
-                account
-            }
-        });
-    }
+
     render() {
         const { accountInfo: { login, avatar_url, name, bio, public_repos, followers, following } } = this.props;
         const title = (
@@ -32,8 +25,6 @@ class Index extends PureComponent {
         };
         return (
             <Card>
-                <Account value={login} onSubmit={this.handleSubmit} />
-                <Divider />
                 <Row type={'flex'} justify={'space-between'} style={{ textAlign: 'center', padding: '10px 20px', }}>
                     <Col {...layout} xl={7}>
                         <Card style={{ textAlign: 'left', minHeight: 140 }}>
