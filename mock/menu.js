@@ -1,6 +1,13 @@
+/*
+ * @Author: your name
+ * @Date: 2021-04-03 15:50:42
+ * @LastEditTime: 2021-04-16 16:02:46
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \visulization\mock\menu.js
+ */
 const Mock = require('mockjs');
-const menuData = [
-    {
+const menuData = [{
         title: "gitDataV",
         key: "gitDataV",
     },
@@ -9,36 +16,13 @@ const menuData = [
         key: "regionalAnalysis",
     },
     {
-        title: "users",
-        key: "users",
-    },
-    {
         title: "404",
         key: "404",
     },
     {
-        title: "用户行为",
-        key: "yonghuxingwei",
-        children: [
-            {
-                title: "路径分析",
-                key: "pathAnalysis",
-            },
-            {
-                title: "view1",
-                key: "p1",
-            },
-            {
-                title: "view2",
-                key: "p2",
-            },
-        ]
-    },
-    {
-        title: "echarts组件",
+        title: "其他",
         key: "echarts",
-        children: [
-            {
+        children: [{
                 key: 'Bar',
                 title: 'Bar'
             },
@@ -71,34 +55,6 @@ const menuData = [
                 title: 'Sankey'
             },
         ]
-    },
-    {
-        title: "d3.js组件",
-        key: "d3Chart",
-        children: [
-            {
-                title: "树图",
-                key: "treePage",
-            },
-        ]
-    },
-    {
-        title: "iframe",
-        key: "iframe",
-        children: [
-            {
-                title: "bing",
-                key: "bing",
-            }
-        ]
-    },
-    {
-        title: "图形组件",
-        key: "react-charts",
-    },
-    {
-        title: "请给star",
-        key: "github",
     },
 ];
 const data = Mock.mock({

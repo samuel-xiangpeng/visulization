@@ -4,7 +4,6 @@ import { formatMessage } from 'umi/locale';
 import { Page } from '@components';
 import Header from './components/header';
 import Content from './components/content';
-import FooterTable from './components/footerTable';
 
 class Index extends PureComponent {
 
@@ -21,13 +20,12 @@ class Index extends PureComponent {
             >
                 <Header />
                 <Content />
-                {/* <FooterTable /> */}
             </Page>
         );
     }
 }
 
-export default connect(({ githubPro, loading }) => {
+export default connect(({ loading }) => {
     return {
         loading: loading.models.github
     };

@@ -5,8 +5,6 @@
  * @description  页面header
  */
 import { PureComponent } from 'react';
-import { Icon } from 'antd';
-import Breadcrumb from './breadcrumb';
 import isEqual from 'lodash/isEqual';
 import classnames from 'classnames';
 import { sysDefultPage } from '@platformConfig';
@@ -63,9 +61,6 @@ class PageHeader extends PureComponent {
                     [styles.hide]: !isShow,
                 })
             } >
-            {/* <
-            Breadcrumb breadcrumbList = { breadcrumbData }
-            />   */}
             <h2 className = {
                 classnames(styles.title, {
                     [styles.hide]: !title,

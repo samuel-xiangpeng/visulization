@@ -1,44 +1,26 @@
-export default [
-    // {
-    //     title: "高校毕业生就业分析",
-    //     link: "/sys/githubpro",
-    //     key: "gitDataV",
-    //     icon: "github"
-    // },
+/*
+ * @Author: your name
+ * @Date: 2021-04-03 15:50:42
+ * @LastEditTime: 2021-04-16 18:04:38
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \visulization\config\menu.config.js
+ */
+export default [{
+        title: "首页",
+        link: "/sys/githubpro",
+        key: "gitDataV",
+        icon: "github"
+    },
     {
-        title: "地域分析",
+        title: "地域流向分析",
         link: "/sys/regionalAnalysis",
         key: "regionalAnalysis",
         icon: "idcard"
     },
-    // {
-    //     title: "用户行为",
-    //     key: "yonghuxingwei",
-    //     icon: "contacts",
-    //     children: [
-    //         {
-    //             title: "路径分析",
-    //             link: "/sys/pathAnalysis",
-    //             key: "pathAnalysis",
-    //             icon: "link"
-    //         },
-    //         {
-    //             title: "view1",
-    //             link: "/sys/view/p1",
-    //             key: "p1",
-    //             icon: "line-chart"
-    //         },
-    //         {
-    //             title: "view2",
-    //             link: "/sys/view/p2",
-    //             key: "p2",
-    //             icon: "bar-chart"
-    //         },
-    //     ]
-    // },
     {
-        title: '自定义',
-        key: 'echarts',
+        title: '其他',
+        key: '其他图形',
         icon: 'icon-visual',
         children: [{
                 link: '/sys/echarts/bar',
@@ -90,70 +72,4 @@ export default [
             // },
         ]
     },
-    // {
-    //     title: "d3.js组件",
-    //     key: "d3Chart",
-    //     icon: "icon-baobiaofenxi",
-    //     children: [
-    //         {
-    //             title: "树图",
-    //             link: "/sys/treePage",
-    //             key: "treePage",
-    //             icon: "icon-tree"
-    //         },
-    //         {
-    //             title: "桑基图",
-    //             link: "/sys/sankeyPage",
-    //             key: "sankeyPage",
-    //             icon: "icon-mapsankey"
-    //         },
-    //     ]
-    // },
-    // {
-    //     title: "用户分析",
-    //     link: "/sys/users",
-    //     key: "users",
-    //     icon: "user"
-    // },
-    // {
-    //     title: "404",
-    //     link: "/404",
-    //     key: "404",
-    //     icon: "frown"
-    // },
-    // {
-    //     title: "iframe",
-    //     key: "iframe",
-    //     icon: "icon-chuangkouwindow30",
-    //     children: [
-    //         {
-    //             title: "bing",
-    //             link: "/frame/bing",
-    //             key: "bing",
-    //             icon: "shop",
-    //             url: `https://cn.bing.com/`,
-    //             query: {
-    //                 h: 1200
-    //             }
-    //         },
-    //         {
-    //             title: "百度",
-    //             link: "/frame/baidu",
-    //             key: "baidu",
-    //             icon: "shop",
-    //             url: `https://www.baidu.com/`,
-    //         },]
-    // },
-    // {
-    //     title: "图形组件demo",
-    //     url: "https://mpw0311.github.io/react-charts",
-    //     key: "react-charts",
-    //     icon: "bar-chart"
-    // },
-    // {
-    //     title: "请给star",
-    //     url: "https://github.com/mpw0311/antd-umi-sys",
-    //     key: "github",
-    //     icon: "star"
-    // },
 ];

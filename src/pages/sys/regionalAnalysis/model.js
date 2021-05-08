@@ -15,27 +15,27 @@ export default {
                 },
                 {
                     "field": "email",
-                    "name": "互联网行业",
+                    "name": "租赁和商务服务业",
                     "type": "string"
                 },
                 {
                     "field": "union",
-                    "name": "房地产行业",
+                    "name": "信息传输，软件和信息技术服务业",
                     "type": "string"
                 },
                 {
                     "field": "video",
-                    "name": "影视娱乐行业",
+                    "name": "制造业",
                     "type": "string"
                 },
                 {
                     "field": "visit",
-                    "name": "餐饮行业",
+                    "name": "教育",
                     "type": "string"
                 },
                 {
                     "field": "search",
-                    "name": "医疗服务",
+                    "name": "金融",
                     "type": "string"
                 }
             ],

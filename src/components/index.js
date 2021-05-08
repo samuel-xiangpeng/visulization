@@ -1,27 +1,23 @@
+/*
+ * @Author: your name
+ * @Date: 2021-04-03 15:50:42
+ * @LastEditTime: 2021-04-16 15:52:42
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \visulization\src\components\index.js
+ */
 import Register from './Register';
 import Icon from './Icon';
-import DataTable from './DataTable';
-import Breadcrumb from './Breadcrumb';
-import Announcement from './Announcement';
 import PageHeader from './PageHeader';
 import ResetPassword from './ResetPassword';
 import Page from './PageWrapper';
-import GlobalDrawer from './GlobalDrawer';
-import Exception from './Exception';
-import HeaderSearch from './HeaderSearch';
 import Consumer from './Consumer';
 
 export {
     Icon,
-    DataTable,
-    Breadcrumb,
-    Announcement,
     PageHeader,
     ResetPassword,
     Register,
     Page,
-    GlobalDrawer,
-    Exception,
-    HeaderSearch,
     Consumer,
 };

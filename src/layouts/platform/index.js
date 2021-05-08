@@ -20,7 +20,7 @@ import Authorized from '../components/Authorized';
 import { query } from '../constant';
 import ContentHeader from './header';
 import Logo from './logo';
-import StartedModal from './startedModal';
+
 import styles from './index.less';
 
 const { Header, Sider, Content } = Layout;
@@ -189,8 +189,6 @@ class Platform extends PureComponent {
                             {/* 返回顶端 */}
                             <BackTop target={() => document.getElementById('backTop')} style={{ right: 20, bottom: 25 }} />
                         </Layout>
-                        {/* 点赞弹窗 */}
-                        <StartedModal />
                     </Context.Provider>
                 )}
             </ContainerQuery>

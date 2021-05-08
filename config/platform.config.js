@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-04-03 15:00:54
- * @LastEditTime: 2021-04-03 16:16:08
+ * @LastEditTime: 2021-04-19 17:47:10
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \sys\config\platform.config.js
@@ -34,10 +34,10 @@ module.exports = {
     iconUrl: '//at.alicdn.com/t/font_1030595_depmdbpf3yc.js',
     // 系统默认首页
     sysDefultPage: {
-        pathname: '/sys/regionalAnalysis',
+        pathname: '/sys/githubpro',
         state: {
-            key: 'regionalAnalysis',
-            pathtitles: [{ title: '地域分析', icon: 'idcard' }],
+            key: 'githubpro',
+            pathtitles: [{ title: '首页', icon: 'idcard' }],
         }
     },
 };

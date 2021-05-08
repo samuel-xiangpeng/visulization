@@ -16,11 +16,11 @@ function Index(props) {
             const { email, union, video, visit, search, rank } = data;
             return `<div style='color:#666;'>
             ${marker}${name}排名：<span style='color:#E21918;font-size:16px;'>${rank}</span> <br/>
-        ${email ? `互联网行业：<span style='color:#E21918;font-size:16px;'>${formatNumer(email)}</span>人<br />` : ''}
-        ${union ? `房地产行业：<span style='color:#E21918;font-size:16px;'>${union}</span>人<br />` : ''}
-        ${video ? `影视娱乐行业：<span style='color:#E21918;font-size:16px;'>${video}</span>人<br />` : ''}
-        ${visit ? `餐饮行业：<span style='color:#E21918;font-size:16px;'>${visit}</span>人<br />` : ''}
-        ${search ? `医疗服务：<span style='color:#E21918;font-size:16px;'>${search}</span>人<br />` : ''}
+        ${email ? `租赁和商务服务业:<span style='color:#E21918;font-size:16px;'>${formatNumer(email)}</span>人<br />` : ''}
+        ${union ? `信息传输，软件和信息技术服务业:<span style='color:#E21918;font-size:16px;'>${union}</span>人<br />` : ''}
+        ${video ? `制造业:<span style='color:#E21918;font-size:16px;'>${video}</span>人<br />` : ''}
+        ${visit ? `教育:<span style='color:#E21918;font-size:16px;'>${visit}</span>人<br />` : ''}
+        ${search ? `金融:<span style='color:#E21918;font-size:16px;'>${search}</span>人<br />` : ''}
         </div>`;
     };
     const { columns = [], rows } = mapdata;
@@ -71,7 +71,7 @@ function Index(props) {
         </span>
     );
     return (
-        <Page loading={false} title={'某高校毕业生就业分析'} flex>
+        <Page loading={false} showHeader={false} title={'某高校毕业生就业分析'} flex>
             <div style={{ width: '100%', minHeight: '70vh'/* height: 'calc(100vh - 240px)' */ }}>
                 <ChinaMap
                     title={'某高校毕业生就业分析'}
